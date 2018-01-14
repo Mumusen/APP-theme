@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>自选</title>
+    <link rel="stylesheet" href="../css/api.css"/>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/frame.css">
+</head>
+<body>
+<header id="header" class="index">
+    <div class="statusBar"></div>
+    <div class="content">
+        <span class="leftBtn txt-btn" onclick="openWindow('choiceshares',{},'push')">编辑</span>
+        自选
+        <span class="rightBtn search-btn" onclick="openWindow('moreThemeRankingSearch',{},'push')"></span>
+    </div>
+</header>
+<section class="por" id="tabBox">
+    <i class="back"></i>
+    <div class="title webkit" id="tabChoice">
+        <span class="active">全部</span>
+        <span>主题</span>
+        <span>股票</span>
+    </div>
+    <div class="tit webkit">
+        <span>名称</span>
+        <span>现价</span>
+        <span>涨跌幅</span>
+    </div>
+    <div class="list">
+        <ul>
+            <li class="theme hot-txt" onclick="openWindow('themeDetails',{},'push')">
+                <div class="li">
+                    <span>参股金融 <b>主题</b></span>
+                    <span>--</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn" class="droggle"></i>
+            </li>
+            <li class="hot-txt" onclick="openWindow('stockDetails',{},'push')">
+                <div class="li">
+                    <span>参股金融<i>00753.HK</i></span>
+                    <span>12.56</span>
+                    <span><u>+15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>
+            <li class="theme hot-txt" onclick="openWindow('themeDetails',{},'push')">
+                <div class="li">
+                    <span>参股金融 <b>主题</b></span>
+                    <span>--</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn" class="droggle"></i>
+            </li>
+            <li onclick="openWindow('stockDetails',{},'push')">
+                <div class="li">
+                    <span>参股金融<i>00753.HK</i></span>
+                    <span>12.56</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>  
+            <li class="theme" onclick="openWindow('themeDetails',{},'push')">
+                <div class="li">
+                    <span>参股金融 <b>主题</b></span>
+                    <span>--</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>  
+        </ul>
+    </div>
+    <div class="list list-theme">
+        <ul>
+            <li>
+                <div class="li">
+                    <span>222<b>主题</b></span>
+                    <span>--</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>
+            <li>
+                <div class="li">
+                    <span>参股金融<b>主题</b></span>
+                    <span>--</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>
+            <li>
+                <div class="li">
+                    <span>参股金融<b>主题</b></span>
+                    <span>--</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>
+            <li>
+                <div class="li">
+                    <span>参股金融<b>主题</b></span>
+                    <span>--</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>  
+            <li>
+                <div class="li">
+                    <span>参股金融2<b>主题</b></span>
+                    <span>--</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>  
+        </ul>
+    </div>
+    <div class="list">
+        <ul>
+            <li>
+                <div class="li">
+                    <span>参股金融<i>00753.HK</i></span>
+                    <span>12.56</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>
+            <li>
+                <div class="li">
+                    <span>参股金融<i>00753.HK</i></span>
+                    <span>12.56</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>
+            <li>
+                <div class="li">
+                    <span>参股金融<i>00753.HK</i></span>
+                    <span>12.56</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>
+            <li>
+                <div class="li">
+                    <span>参股金融<i>00753.HK</i></span>
+                    <span>12.56</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>  
+            <li>
+                <div class="li">
+                    <span class="theme">参股金融2</span>
+                    <span>12.56</span>
+                    <span><u>-15.36%</u></span>
+                </div>
+                <i class="btn"></i>
+            </li>  
+        </ul>
+    </div>
+</section>
+<section class="por" style="display:none">
+    <i class="back"></i>
+    <div class="title chio-box">
+        <h2>添加自选</h2>
+        <h3>体验智能预警超强功能</h3>
+        <a href="#" class="signout" onclick="openWindow('moreThemeFromFrame1',{},'push')">立 即 添 加</a>
+    </div>
+    <div class="chio-min">
+        <h2>热门推荐</h2>
+        <h3>大数据挖掘牛股</h3>
+        <a href="#" class="btn-change">换一换</a>
+        <!-- theme-txt 备用 -->
+        <p>
+            <span>最多多字多多字</span>
+            <span>最多多字多多字</span>
+            <span>最多多字多</span>
+        </p>
+        <p class="shares-txt">
+            <span>中国中期</span>
+            <span>中国中期</span>
+            <span>中国中期</span>
+        </p>
+        <a href="#" class="signout">一 键 添 加</a>
+    </div>
+</section>
+</body>
+<script src="../script/flexible.js"></script>
+<script src="../script/zepto.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/choice_leon.js"></script>
+<script>
+    // apiready = function () {
+        $.binLib.Slide();
+    // }
+</script>
+</html>

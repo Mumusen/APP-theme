@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/api.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/frame.css">
+    <link rel="stylesheet" href="../css/frame_leon.css">
+</head>
+<body>
+<div class="min">
+    <i class="user-btn" onclick="openWindow('user',{},'push')"></i>
+    <i class="search-btn" onclick="openWindow('moreThemeFromFrame1',{},'push')"></i>
+</div>
+<!-- 默认绿色 -->
+<ul class="box">
+    <li>
+        <h3>上证指数</h3>
+        <h4>3383.34</h4>
+        <p>
+            <span>-9.99</span>
+            <span>-9.99</span>
+        </p>
+    </li>
+    <li class="hot">
+        <h3>深证成指</h3>
+        <h4>11458.34</h4>
+        <p>
+            <span>+9.99</span>
+            <span>+9.99</span>
+        </p>
+    </li>
+    <li>
+        <h3>创业板指</h3>
+        <h4>3383.34</h4>
+        <p>
+            <span>-9.99</span>
+            <span>-9.99</span>
+        </p>
+    </li>
+</ul>
+<!-- 今日领涨/跌主题 -->
+<div class="theme">
+    <div class="title">
+        <p id="tabBox">
+            <span class="active">今日领涨主题</span>
+            <span>今日领跌主题</span>
+        </p>
+        <div class="box-btn">
+            <div class="more-btn" onclick="openWindow('moreThemeRankings',{},'push')"></div>
+        </div>
+    </div>
+    <ul class="rise">
+        <li>
+            <div class="left">
+                <h2 onclick="openWindow('themeDetails',{},'push')">京津冀一体化</h2>
+                <div class="txt">
+                    <p>+1.24%</p>
+                    <p>
+                        <i></i>
+                        <span>中国中期<u>+9.99%</u></span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="long" onclick="openWindow('themeBillboard',{},'push')"><img src="../image/icon_long.png"></div>
+                <a href="#" class="follow follow-no"></a>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <h2 onclick="openWindow('themeDetails',{},'push')">京津冀一体化</h2>
+                <div class="txt">
+                    <p>+1.24%</p>
+                    <p>
+                        <i></i>
+                        <span>中国中期<u>+9.99%</u></span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="long" onclick="openWindow('themeBillboard',{},'push')"><img src="../image/icon_long.png"></div>
+                <a href="#" class="follow"></a>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <h2 onclick="openWindow('themeDetails',{},'push')">京津冀一体化</h2>
+                <div class="txt">
+                    <p>+1.24%</p>
+                    <p>
+                        <i></i>
+                        <span>中国中期<u>+9.99%</u></span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="long" onclick="openWindow('themeBillboard',{},'push')"><img src="../image/icon_long.png"></div>
+                <a href="#" class="follow"></a>
+            </div>
+        </li>
+    </ul>
+    <ul class="rise rise-down">
+        <li>
+            <div class="left">
+                <h2 onclick="openWindow('themeDetails',{},'push')">京津冀一体化</h2>
+                <div class="txt">
+                    <p>+1.24%</p>
+                    <p>
+                        <i></i>
+                        <span>中国中期<u>+9.99%</u></span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="long" onclick="openWindow('themeBillboard',{},'push')"><img src="../image/icon_long.png"></div>
+                <a href="#" class="follow follow-no"></a>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <h2 onclick="openWindow('themeDetails',{},'push')">京津冀一体化</h2>
+                <div class="txt">
+                    <p>+1.24%</p>
+                    <p>
+                        <i></i>
+                        <span>中国中期<u>+9.99%</u></span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="long" onclick="openWindow('themeBillboard',{},'push')"><img src="../image/icon_long.png"></div>
+                <a href="#" class="follow"></a>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <h2 onclick="openWindow('themeDetails',{},'push')">京津冀一体化</h2>
+                <div class="txt">
+                    <p>+1.24%</p>
+                    <p>
+                        <i></i>
+                        <span>中国中期<u>+9.99%</u></span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="long" onclick="openWindow('themeBillboard',{},'push')"><img src="../image/icon_long.png"></div>
+                <a href="#" class="follow"></a>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- 最新资讯 -->
+<div class="info">
+    <div class="title">最新资讯</div>
+    <div class="mian">
+        <div class="day"><span>15:45</span><i></i></div>
+        <div class="txt">
+            <div onclick="openWindow('txt',{},'push')">
+                <h2>京津冀一体化</h2>
+                <p>半导体、芯片行业显然是美国防去年月奥巴马曾签署命令</p>
+            </div>
+            <p>
+                <span onclick="openWindow('stockDetails',{},'push')">三一重工<u>+5.02%</u></span>
+                <span onclick="openWindow('stockDetails',{},'push')" class="hot">三一重工<u>-5.02%</u></span>
+            </p>
+        </div>
+    </div>
+    <div class="mian">
+        <div class="day"><span>15:45</span><i></i></div>
+        <div class="txt">
+            <h2>京津冀一体化</h2>
+            <p>半导体、芯片行业显然是美国防去年月奥巴马曾签署命令</p>
+            <p>
+                <span>三一重工<u>+5.02%</u></span>
+                <span class="hot">三一重工<u>-5.02%</u></span>
+            </p>
+        </div>
+    </div>
+    <div class="mian">
+        <div class="day"><span>15:45</span><i></i></div>
+        <div class="txt">
+            <h2>京津冀一体化</h2>
+            <p>半导体、芯片行业显然是美国防去年月奥巴马曾签署命令</p>
+            <p>
+                <span>三一重工<u>+5.02%</u></span>
+                <span class="hot">三一重工<u>-5.02%</u></span>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../script/flexible.js"></script>
+<script src="../script/zepto.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/index.js"></script>
+<script>
+    apiready = function () {
+        $.binLib.indexTheme();
+
+        api.setRefreshHeaderInfo({
+        loadingImg: 'widget://image/refresh.png',
+        bgColor: '#d3bc89',
+        textColor: '#fff',
+        textDown: '下拉刷新...',
+        textUp: '松开刷新...'
+        }, function(ret, err) {
+            //在这里从服务器加载数据，加载完成后调用api.refreshHeaderLoadDone()方法恢复组件到默认状态
+            alert('刷新完毕')
+            location.reload();
+
+            api.refreshHeaderLoadDone();
+        });
+    };
+    
+</script>
+</html>

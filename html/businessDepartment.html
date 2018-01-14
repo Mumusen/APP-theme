@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>营业部</title>
+    <link rel="stylesheet" href="../css/api.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/frame.css">
+    <link rel="stylesheet" href="../css/frame_leon.css">
+    <link rel="stylesheet" href="../css/reset-lwj.css">
+    <link rel="stylesheet" href="../css/style-lwj.css">
+</head>
+<body>
+<!--由龙虎榜右上的营业部跳转进来-->
+<header id="header" class="index moreHeader slowHeader">
+    <div class="statusBar"></div>
+    <div class="content">
+        <i class="return-btn" onclick="closeWindow('businessDepartment')"></i>
+        营业部
+        <!--<span class="calendar-btn"></span>
+        <div class="popupsList" id="popups" style="color:#999">
+            <i class="sharp"></i>
+            <ul id="con-list">
+                <li>5日</li>
+                <li>10日</li>
+                <li>一个月</li>
+                <li>3个月</li>
+            </ul>
+        </div>-->
+    </div>
+</header>
+<section class="moreThemeRankings departmentCont">
+    <div class="theme">
+        <div class="titleCol clearfix">
+            <span class="active">最新热门</span>
+            <span>近期热门</span>
+        </div>
+    </div>
+    <div class="departmentList showAll">
+        <!--当日热门-->
+        <div class="all dayHot active">
+            <ul>
+                <li>
+                    <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                    <div class="cont clearfix">
+                        <div class="cont-left fl">
+                            <span>上榜个股家数：<b class="weight">40</b></span>
+                        </div>
+                        <div class="cont-right fr">
+                            <span>合计交易金额：<b>4.58亿</b></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                    <div class="cont clearfix">
+                        <div class="cont-left fl">
+                            <span>上榜个股家数：<b class="weight">40</b></span>
+                        </div>
+                        <div class="cont-right fr">
+                            <span>合计交易金额：<b>4.58亿</b></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--近期热门-->
+        <div class="all nearbyHot">
+            <div class="dateColumn" style="margin-top:0">
+                <div class="col">
+                    <span class="active">5日<i></i></span>
+                </div>
+                <div class="col">
+                    <span>10日<i></i></span>
+                </div>
+                <div class="col">
+                    <span>1个月<i></i></span>
+                </div>
+                <div class="col">
+                    <span>3个月<i></i></span>
+                </div>
+            </div>
+            <div class="attentionThemeList">
+                <!--5日-->
+                <div class="sm attentionThemeOne active">
+                    <ul>
+                        <li>
+                            <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                            <div class="attentionThemeCont">
+                                <div class="col clearfix">
+                                    <span>第一关注</span>
+                                    <span class="widthLenth" style="width:45%" onclick="openWindow('clickThemeNum',{},'push')">5</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第二关注</span>
+                                    <span class="widthLenth" style="width:30%" onclick="openWindow('clickThemeNum',{},'push')">4</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第三关注</span>
+                                    <span class="widthLenth" style="width:20%" onclick="openWindow('clickThemeNum',{},'push')">3</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                            <div class="attentionThemeCont">
+                                <div class="col clearfix">
+                                    <span>第一关注</span>
+                                    <span class="widthLenth" style="width:45%" onclick="openWindow('clickThemeNum',{},'push')">5</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第二关注</span>
+                                    <span class="widthLenth" style="width:30%" onclick="openWindow('clickThemeNum',{},'push')">4</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第三关注</span>
+                                    <span class="widthLenth" style="width:20%" onclick="openWindow('clickThemeNum',{},'push')">3</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--10天-->
+                <div class="sm attentionThemeOne">
+                    <ul>
+                        <li>
+                            <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                            <div class="attentionThemeCont">
+                                <div class="col clearfix">
+                                    <span>第一关注</span>
+                                    <span class="widthLenth" style="width:45%" onclick="openWindow('clickThemeNum',{},'push')">5</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">第一页</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第二关注</span>
+                                    <span class="widthLenth" style="width:30%" onclick="openWindow('clickThemeNum',{},'push')">4</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第三关注</span>
+                                    <span class="widthLenth" style="width:20%" onclick="openWindow('clickThemeNum',{},'push')">3</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--1月-->
+                <div class="sm attentionThemeOne">
+                    <ul>
+                        <li>
+                            <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                            <div class="attentionThemeCont">
+                                <div class="col clearfix">
+                                    <span>第一关注</span>
+                                    <span class="widthLenth" style="width:45%" onclick="openWindow('clickThemeNum',{},'push')">5</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">这是啥</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第二关注</span>
+                                    <span class="widthLenth" style="width:30%" onclick="openWindow('clickThemeNum',{},'push')">4</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第三关注</span>
+                                    <span class="widthLenth" style="width:20%" onclick="openWindow('clickThemeNum',{},'push')">3</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                            <div class="attentionThemeCont">
+                                <div class="col clearfix">
+                                    <span>第一关注</span>
+                                    <span class="widthLenth" style="width:45%" onclick="openWindow('clickThemeNum',{},'push')">5</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第二关注</span>
+                                    <span class="widthLenth" style="width:30%" onclick="openWindow('clickThemeNum',{},'push')">4</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第三关注</span>
+                                    <span class="widthLenth" style="width:20%" onclick="openWindow('clickThemeNum',{},'push')">3</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--3月-->
+                <div class="sm attentionThemeOne">
+                    <ul>
+                        <li>
+                            <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                            <div class="attentionThemeCont">
+                                <div class="col clearfix">
+                                    <span>第一关注</span>
+                                    <span class="widthLenth" style="width:45%" onclick="openWindow('clickThemeNum',{},'push')">5</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">汽车汽车</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第二关注</span>
+                                    <span class="widthLenth" style="width:30%" onclick="openWindow('clickThemeNum',{},'push')">4</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第三关注</span>
+                                    <span class="widthLenth" style="width:20%" onclick="openWindow('clickThemeNum',{},'push')">3</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 onclick="openWindow('businessDepartmentDetails',{},'push')">国金证券股份有限公司上海奉贤区金碧路...</h4>
+                            <div class="attentionThemeCont">
+                                <div class="col clearfix">
+                                    <span>第一关注</span>
+                                    <span class="widthLenth" style="width:45%" onclick="openWindow('clickThemeNum',{},'push')">5</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第二关注</span>
+                                    <span class="widthLenth" style="width:30%" onclick="openWindow('clickThemeNum',{},'push')">4</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                                <div class="col clearfix">
+                                    <span>第三关注</span>
+                                    <span class="widthLenth" style="width:20%" onclick="openWindow('clickThemeNum',{},'push')">3</span>
+                                    <span class="goThemeDetails" onclick="openWindow('themeDetails',{},'push')">手工纺织业</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bind-mark"></div>
+</body>
+<script src="../script/flexible.js"></script>
+<script src="../script/zepto.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/index.js"></script>
+<script>
+    apiready = function () {
+
+    }
+    //大选项卡
+    $('.titleCol span').on('click',function(){
+        $('.titleCol span').removeClass('active');
+        $('.showAll>div.all').removeClass('active');
+        $(this).addClass('active');
+        $('.showAll>div.all').eq($(this).index()).addClass('active');
+    })
+    //小选项卡 近期热门
+    $('.dateColumn .col').on('click',function(){
+        $('.dateColumn .col span').removeClass('active');
+        $('.attentionThemeList div.sm').removeClass('active');
+        $(this).find('span').addClass('active');
+        $('.attentionThemeList div.sm').eq($(this).index()).addClass('active');
+    })
+</script>
+</html>

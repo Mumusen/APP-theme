@@ -1,0 +1,101 @@
+.change-box {
+  margin-top: 1.2rem;
+}
+
+.login-tit {
+  font-size: 0.8rem;
+  text-indent: 0.13333rem;
+  padding-bottom: 1.06667rem;
+}
+
+.login .change-input input {
+  text-indent: 0;
+}
+
+.login p {
+  text-align: right;
+  padding-top: 0.53333rem;
+}
+
+.login p a {
+  font-size: 0.37333rem;
+  color: #d0bc89;
+}
+
+.login .signout {
+  margin-top: 2.93333rem;
+}
+
+.login .register-btn {
+  margin: 0.4rem auto;
+  font-size: 0.42667rem;
+  color: #67a6e6;
+}
+
+.login-box {
+  background-color: #fff;
+}
+
+.login-box .return-btn:before {
+  width: 0.53333rem;
+  height: 0.53333rem;
+  background: url(../image/login_close_leon.png) no-repeat center;
+  background-size: 0.53333rem;
+}
+
+.protocol {
+  position: fixed;
+  bottom: 1.33333rem;
+  left: 50%;
+  margin-left: -25%;
+  font-size: 0.32rem;
+  color: #999;
+}
+
+.protocol a {
+  color: #67a6e6;
+}
+
+.login-on .login-tit {
+  padding-bottom: 0;
+}
+
+.login-on .signout {
+  margin-top: 1.6rem;
+}
+
+.reg-top {
+  margin-top: 0.8rem;
+}
+
+.reg-box h2 {
+  font-size: 0.8rem;
+}
+
+.reg-box p {
+  font-size: 0.32rem;
+  color: #999;
+  margin-top: 0.13333rem;
+}
+
+.reg-box p a {
+  color: #56c1f9;
+}
+
+.reg-box .eight {
+  text-indent: 0.4rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.reg-box .phone input {
+  text-indent: 0.26667rem;
+}
+
+.reg-box .code button {
+  color: #e80618;
+}
+
+.reg-box .change-btn {
+  margin-top: 1.6rem;
+}

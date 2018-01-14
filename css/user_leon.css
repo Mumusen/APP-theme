@@ -1,0 +1,450 @@
+.back {
+  height: 4rem;
+}
+
+.min {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.min .name {
+  text-align: center;
+}
+
+.min .name img {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  box-shadow: 0 0.05333rem 0.13333rem rgba(81, 71, 72, 0.8);
+}
+
+.min .name p {
+  font-size: 0.37333rem;
+}
+
+.min .box {
+  border-radius: 0.13333rem;
+  box-shadow: 0 0.02667rem 0.13333rem rgba(81, 71, 72, 0.35);
+  -moz-box-shadow: 0 0.02667rem 0.13333rem rgba(81, 71, 72, 0.35);
+  -webkit-box-shadow: 0 0.02667rem 0.13333rem rgba(81, 71, 72, 0.35);
+  margin: 0.4rem 0.4rem 0.26667rem;
+  background-color: #fff;
+}
+
+.min .box li {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-sizing: border-box;
+  height: 1.46667rem;
+  line-height: 1.46667rem;
+  font-size: 0.37333rem;
+}
+
+.min .box li .col-l {
+  -webkit-box-flex: 1;
+}
+
+.min .box li .col-l span {
+  float: right;
+  margin-right: 0.4rem;
+  color: #d3bc89;
+  font-family: 'Arial';
+}
+
+.min .box li .col-l::before {
+  content: "";
+  float: left;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  background: url(../image/user_icon_leon.png) no-repeat center;
+  background-size: cover;
+  background-position: 0 100%;
+  margin: 0.48rem 0.26667rem;
+}
+
+.min .box li .con-icon-new::before {
+  background-position: 0 75%;
+}
+
+.min .box li .con-icon-pwd::before {
+  background-position: 0 50%;
+}
+
+.min .box li .con-icon-about::before {
+  background-position: 0 25%;
+}
+
+.min .box li .con-icon-app::before {
+  background-position: 0 0;
+}
+
+.min .box li .col-btn {
+  padding: 0.54667rem 0.53333rem;
+}
+
+.min .box li .col-btn:before {
+  content: "";
+  display: block;
+  width: 0.2rem;
+  height: 0.37333rem;
+  background: url(../image/user_icon_right_leon.png) no-repeat center;
+  background-size: cover;
+}
+
+.min .box li:active {
+  background-color: #eee;
+}
+
+.about-back {
+  height: 0.93333rem;
+}
+
+.about-pic {
+  margin: 0 0.4rem;
+  height: 3.33333rem;
+  background: url(../image/about_pic_leon.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 0.13333rem;
+}
+
+.min .about-box {
+  padding: 0.4rem 0;
+  background-color: #d3bc89;
+  color: #fff;
+  box-shadow: none;
+}
+
+.min .about-box li {
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.min .about-box li .col-l::before {
+  width: 0.53333rem;
+  height: 0.53333rem;
+  background: url(../image/about_icon_leon.png) no-repeat 0 0;
+  background-size: cover;
+  margin: 0.21333rem 0.53333rem;
+}
+
+.min .about-box li:nth-child(2) .col-l::before {
+  background-position: 0 35%;
+}
+
+.min .about-box li:nth-child(3) .col-l::before {
+  background-position: 0 70%;
+}
+
+.min .about-box li:nth-child(4) .col-l::before {
+  background-position: 0 100%;
+}
+
+.about-txt {
+  margin: 0 0.4rem;
+}
+
+.about-txt .tit {
+  font-size: 0.37333rem;
+  padding-top: 0.66667rem;
+}
+
+.about-txt .tit b {
+  font-weight: 600;
+}
+
+.about-txt h3 {
+  height: 0.50667rem;
+  line-height: 0.50667rem;
+  color: #ff0000;
+  text-align: center;
+  font-size: 0.42667rem;
+  position: relative;
+  margin: 0.46667rem 0;
+}
+
+.about-txt h3:before, .about-txt h3:after {
+  content: '';
+  width: 0.53333rem;
+  height: 0.02667rem;
+  background-color: #ff0000;
+  position: absolute;
+  top: 50%;
+}
+
+.about-txt h3:before {
+  left: 32%;
+}
+
+.about-txt h3:after {
+  right: 32%;
+}
+
+.about-txt p {
+  font-size: 0.37333rem;
+  color: #666;
+  text-indent: 0.74667rem;
+  line-height: 1.6;
+}
+
+.trait h4 {
+  font-size: 0.37333rem;
+  padding-left: 0.96rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.trait h4:after {
+  content: '';
+  width: 0.26667rem;
+  height: 0.26667rem;
+  background-color: #6088ee;
+  position: absolute;
+  left: 0;
+  top: 0.13333rem;
+  transform: rotate(45deg);
+}
+
+.trait h4:nth-child(4):after {
+  background-color: #f4af41;
+}
+
+.trait h4:nth-child(6):after {
+  background-color: #ff6767;
+}
+
+.trait p {
+  text-indent: 0;
+  padding: 0 0 0.4rem 0.96rem;
+}
+
+.bot {
+  padding: 0.53333rem 0;
+}
+
+.bot p {
+  text-align: center;
+  font-size: 0.32rem;
+  color: #666;
+}
+
+.change-box {
+  margin: 0.8rem 1.06667rem;
+}
+
+.change-box .change-input {
+  width: 100%;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  margin-top: 0.4rem;
+  font-size: 0.42667rem;
+}
+
+.change-box .change-input input {
+  -webkit-box-flex: 1;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-indent: 0.4rem;
+  color: #666;
+}
+
+.change-box .change-input button {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  color: #d0bc89;
+}
+
+.change-box .change-input button.on {
+  color: #e80618;
+}
+
+.change-box .change-input i {
+  width: 0.48rem;
+  height: 0.48rem;
+  background: url(../image/login_icon_leon.png) no-repeat center;
+  background-position: 0 0;
+  background-size: 0.48rem;
+  display: block;
+  margin: 0.36rem 0.13333rem;
+}
+
+.change-box .change-input .iocn-phone {
+  background-position: 0 100%;
+}
+
+.change-box .tel-input input {
+  width: 60%;
+}
+
+.change-btn {
+  width: 5.33333rem;
+  height: 1.17333rem;
+  border-radius: 0.58667rem;
+  border: 1px solid #d0ba89;
+  display: block;
+  font-size: 0.42667rem;
+  color: #d0ba89;
+  margin: 2.66667rem auto 0;
+}
+
+.follow .box {
+  border-radius: 0.13333rem;
+  box-shadow: 0 1px 10px rgba(81, 71, 72, 0.35);
+  margin: 0.4rem 0.4rem 0.26667rem;
+  padding: 0.53333rem;
+  background-color: #fff;
+}
+
+.follow .box .tit, .follow .box .txt, .follow .box .day {
+  width: 100%;
+  display: -webkit-box;
+}
+
+.follow .box .txt, .follow .box .day {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.follow .box .tit {
+  height: 0.69333rem;
+  line-height: 0.69333rem;
+  -webkit-box-sizing: border-box;
+}
+
+.follow .box .tit h3 {
+  font-size: 0.42667rem;
+  -webkit-box-flex: 1;
+}
+
+.follow .box .tit i {
+  padding-left: 0.53333rem;
+  display: block;
+}
+
+.follow .box .tit i:before {
+  content: "";
+  display: block;
+  width: 0.69333rem;
+  height: 0.69333rem;
+  background: url(../image/icon_follow_no.png) no-repeat center;
+  background-size: cover;
+}
+
+.follow .box .txt {
+  padding-bottom: 0.53333rem;
+}
+
+.follow .box .txt p {
+  font-size: 0.32rem;
+}
+
+.follow .box .txt p span {
+  color: #999;
+  font-size: 0.29333rem;
+  padding-left: 0.32rem;
+}
+
+.follow .box .txt p:nth-child(2) {
+  color: #4ba54c;
+}
+
+.follow .box .txt p:nth-child(2) span {
+  color: #4ba54c;
+  font-size: 0.37333rem;
+  font-family: 'Arial';
+  padding-left: 0;
+}
+
+.follow .box .txt p:nth-child(2) span:nth-child(1) {
+  padding-right: 0.4rem;
+}
+
+.follow .box .day p {
+  display: block;
+  height: 0.61333rem;
+  line-height: 0.61333rem;
+  font-size: 0.32rem;
+  color: #999;
+}
+
+.follow .box .day p u {
+  color: #e80618;
+  font-size: 0.48rem;
+  padding-left: 0.26667rem;
+}
+
+.list, .list-choice {
+  display: none;
+}
+
+.por .title {
+  z-index: 99;
+  box-shadow: none;
+}
+
+.por .list {
+  padding-top: 1.06667rem;
+  display: none;
+}
+
+.por .list p {
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 0.32rem;
+  margin: 0.13333rem 0;
+}
+
+.por .list li {
+  min-height: 2.4rem;
+}
+
+.por .list li .btn {
+  top: 33%;
+}
+
+.por .list .day {
+  font-family: 'Arial';
+  font-size: 0.32rem;
+  text-align: center;
+  padding-bottom: 0.26667rem;
+  color: #999;
+}
+
+.por .list .li {
+  width: 8.4rem;
+  height: auto;
+  min-height: 0.53333rem;
+  line-height: 0.4rem;
+  left: 0.4rem;
+  box-shadow: 0.02667rem 0.02667rem 0.08rem rgba(81, 71, 72, 0.28);
+  -moz-box-shadow: 0.02667rem 0.02667rem 0.08rem rgba(81, 71, 72, 0.28);
+  -webkit-box-shadow: 0.02667rem 0.02667rem 0.08rem rgba(81, 71, 72, 0.28);
+  padding: 0.4rem;
+  border-radius: 0.13333rem;
+  font-size: 0.37333rem;
+}
+
+.por .read .li {
+  color: #dedede;
+}
+
+.por .reading .li p {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.agreement {
+  padding: 0 0.4rem;
+  font-size: 0.48rem;
+}
+
+.agreement h2 {
+  font-size: 0.48rem;
+  font-weight: 600;
+  padding: 0.8rem 0 0.66667rem 0;
+}

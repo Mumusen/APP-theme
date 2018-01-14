@@ -1,0 +1,172 @@
+@charset "UTF-8";
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+  margin: 0;
+  padding: 0;
+  resize: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+address, cite, dfn, em, i, var, b {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a, i, input, button, u {
+  text-decoration: none;
+  outline: 0;
+}
+
+input {
+  caret-color: red;
+}
+
+input::-webkit-input-placeholder {
+  color: #666;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #dedede;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  width: 100%;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+body, html {
+  font-size: 9pt;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: pinfangMedium;
+  color: #333;
+}
+
+.tc {
+  text-align: center;
+}
+
+/* 中等 */
+@font-face {
+  font-family: 'pinfangMedium';
+  src: url("../fonts/PingFangMedium.ttf");
+}
+
+/* 粗体 */
+@font-face {
+  font-family: 'pinfangBold';
+  src: url("../fonts/PingFangBold.ttf");
+}
+
+/* 常规 */
+@font-face {
+  font-family: 'pinfangRegular';
+  src: url("../fonts/PingFangRegular.ttf");
+}
+
+.webkit {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-sizing: border-box;
+}
+
+.webkit > span {
+  -webkit-box-flex: 1;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+.por {
+  position: relative;
+}
+
+.hot {
+  color: #e80618 !important;
+}
+
+.hot h4, .hot p, .hot span, .hot u {
+  color: #e80618 !important;
+}
+
+.hot-bj {
+  background-color: #e80618 !important;
+}
+
+.commonAlertBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.alertContent {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -2.66667rem;
+  padding: 0.48rem 0.4rem;
+  width: 4.8rem;
+  border-radius: 0.26667rem;
+  background-color: #fff;
+  color: #666;
+  text-align: center;
+  font-size: 0.42667rem;
+}
+
+.signout {
+  font-size: 0.42667rem;
+  color: #fff;
+  width: 5.33333rem;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  border-radius: 0.58667rem;
+  background-color: #d0ba89;
+  display: block;
+  margin: 8rem auto 0.2rem;
+  box-shadow: 0 0.13333rem 0.2rem rgba(211, 188, 137, 0.8);
+}
+
+.loading {
+  width: 2.66667rem;
+  height: 2.13333rem;
+  background: #333 url(../image/loading.gif) no-repeat center;
+  background-size: 2.66667rem;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-left: -1.33333rem;
+  border-radius: 0.26667rem;
+  box-shadow: 0 1px 10px rgba(51, 51, 51, 0.8);
+  z-index: 999;
+}

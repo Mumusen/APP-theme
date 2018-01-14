@@ -1,0 +1,93 @@
+@function s($px){
+    @return($px/75)*1rem;
+}
+// 登录
+.change-box{
+    margin-top: s($px:90);
+}
+.login-tit{
+    font-size: s($px:60);
+    text-indent: s($px:10);
+    padding-bottom: s($px:80);
+}
+.login {
+    .change-input input{
+        text-indent: 0;
+    }
+    p{
+        text-align: right;
+        padding-top: s($px:40);
+        a{
+            font-size: s($px:28);
+            color: #d0bc89;
+        }
+    }
+    .signout{
+        margin-top: s($px:220);
+    }
+    .register-btn{
+        margin: s($px:30) auto;
+        font-size: s($px:32);
+        color: #67a6e6;
+    }
+}
+.login-box{
+    background-color: #fff;
+    .return-btn:before{
+        width: s($px:40);
+        height: s($px:40);
+        background: url(../image/login_close_leon.png) no-repeat center;
+        background-size: s($px:40);
+    }
+}
+.protocol{
+    position: fixed;
+    bottom: s($px:100);
+    left: 50%;
+    margin-left: -25%;
+    font-size: s($px:24);
+    color: #999;
+    a{
+        color: #67a6e6;
+    }
+}
+.login-on{
+    .login-tit{
+        padding-bottom: 0;
+    }
+    .signout{
+        margin-top: s($px:120);
+    }
+}
+
+// 注册
+.reg-top{
+    margin-top: s($px:60);
+}
+.reg-box{
+    h2{
+        font-size: s($px:60);
+    }
+    p{
+        font-size: s($px:24);
+        color: #999;
+        margin-top: s($px:10);
+        a{
+            color: #56c1f9;
+        }
+    }
+    .eight{
+        text-indent: s($px:30);
+        height: s($px:90);
+        line-height: s($px:90);
+    }
+    .phone input{
+        text-indent: s($px:20);
+    }
+    .code button{
+        color: #e80618;
+    }
+    .change-btn{
+        margin-top: s($px:120)
+    }
+}

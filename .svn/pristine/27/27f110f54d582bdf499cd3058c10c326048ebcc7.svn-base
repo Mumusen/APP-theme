@@ -1,0 +1,182 @@
+var themeList = {
+	slideList: function(){
+		this.tabChoic();
+		this.choice();
+	},
+	myNews: function(){
+		this.news();
+		this.choiceEditTab();
+		this.tabChoic();
+	},
+	choiceEdit: function(){
+		this.choiceEditTabB();
+		this.lyaerDel();
+		this.layerBtn();
+		this.delLayer();
+		this.choicesBtnAll();
+	},
+	tabChoic: function() {
+		setTimeout(function() {
+			$('.btn').show();
+		}, 1000);
+		var expansion = null; //是否存在展开的list
+		var container = document.querySelectorAll('.list li .li');
+		for (var i = 0; i < container.length; i++) {
+			var x, y, X, Y, swipeX, swipeY;
+			container[i].addEventListener('touchstart', function(event) {
+				x = event.changedTouches[0].pageX;
+				y = event.changedTouches[0].pageY;
+				swipeX = true;
+				swipeY = true;
+				if (expansion) { //判断是否展开
+					expansion.className = "li";
+				}
+				// 删除
+				$('.btn').on('click', function() {
+					// $(this).siblings('.btn').parent('li').remove();
+					$(this).parent('li').remove();
+				})
+			});
+			container[i].addEventListener('touchmove', function(event) {
+				X = event.changedTouches[0].pageX;
+				Y = event.changedTouches[0].pageY;
+				// 左右滑动
+				if (swipeX && Math.abs(X - x) - Math.abs(Y - y) > 0) {
+					// 阻止事件冒泡
+					event.stopPropagation();
+					if (X - x > 10) { //右滑
+						event.preventDefault();
+						this.className = "li"; //右滑收起
+					}
+					if (x - X > 10) { //左滑
+						event.preventDefault();
+						this.className = "li swipeleft"; //左滑展开
+						expansion = this;
+					}
+					swipeY = false;
+				}
+				// 上下滑动
+				if (swipeY && Math.abs(X - x) - Math.abs(Y - y) < 0) {
+					swipeX = false;
+				}
+			});
+		}
+	},	
+	news: function(){
+		$('.mynew-list li .li').each(function(){
+			console.log($(this).height())
+			var h = $(this).height();
+			// var box = $(this).parent().height();
+			var Height= h*3;
+			console.log(Height)
+			$(this).parent().height(Height);
+		})
+	},
+	choice: function() {
+		var $li = $('#tabChoice span');
+		var $ul = $('#tabBox .list');
+		$ul.eq(0).css('display', 'block');
+		$li.mouseover(function() {
+			var $this = $(this);
+			var $t = $this.index();
+			$li.removeClass();
+			$this.addClass('active');
+			$ul.css('display', 'none');
+			$ul.eq($t).css('display', 'block');
+		})
+	},
+	choiceEditTab: function() {
+		var $li = $('#tabChoice span');
+		var $ul = $('#tabBox .list');
+		$ul.eq(0).css('display', 'block');
+		$li.mouseover(function() {
+			var $this = $(this);
+			var $t = $this.index();
+			$li.removeClass();
+			$this.addClass('active');
+			$ul.css('display', 'none');
+			$ul.eq($t).css('display', 'block');
+		})
+	},
+	choiceEditTabB: function() {
+		var $li = $('#tabChoice span');
+		var $ul = $('#tabBox .tab-list');
+		$ul.eq(0).css('display', 'block');
+		$li.mouseover(function() {
+			var $this = $(this);
+			var $t = $this.index();
+			$li.removeClass();
+			$this.addClass('active');
+			$ul.css('display', 'none');
+			$ul.eq($t).css('display', 'block');
+		})
+	},
+	// 删除弹框提示
+	lyaerDel: function(){
+		$('body').on('click','.lyaer-choices button',function(){
+			// var data = obj.dataName;
+			// var inputName = $('input[type=checkbox]:checked');
+			// var inputName = $('input[type=checkbox]:checked').getAttribute(dataName);
+			// console.log(inputName)
+			function choiceLayer(obj){
+				var html =
+				'<div class="layer-del">'+
+				'    <div class="layer-del-box">'+
+				'        <p>确定删除</p>'+
+				'        <p>'+obj.name+'等'+obj.number+'个自选</p>'+
+				'        <div class="btn">'+
+				'            <a href="#" id="btnNo">取消</a>'+
+				'            <a href="#" id="yse">确定</a>'+
+				'        </div>'+
+				'    </div>'+
+				'</div>';
+				$('body').append(html);
+			};
+			function checkinput(obj){
+				if(obj.value == ""){
+					var msg;
+					msg = document.getElementsByName('choice')[0].getAttribute('dataName');
+					alert(msg);
+				}
+			};
+			choiceLayer({
+				name:'zzzz',
+				number: 1
+			})
+		})
+	},
+	// 弹出框取消
+	layerBtn: function(){
+		$('body').on('click','#btnNo', function(){
+			$(this).parent().parent().parent('.layer-del').remove();
+		})
+	},
+	delLayer: function(){
+		var html = 
+		'<div class="lyaer-choices">'+
+		'	<button>删 除</button>'+
+		'</div>';
+		$('body').append(html);
+	},
+	// 自选编辑全选
+	choicesBtnAll: function(){
+		$('.tab-list').on('click','a',function(e){
+			var _this = $(this);
+			var ns = _this.next();
+			var choice = ns.children('li');
+			for(var i = 0; i<choice.length;i++){
+				choice[i];
+			}
+			// $(choice).attr('checked')
+		})
+	}
+};	
+$.binLib.Slide = function (){
+    themeList.slideList();
+};
+$.binLib.mynewsList = function (){
+    themeList.myNews();
+}
+$.binLib.choice = function (){
+    themeList.choiceEdit();
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>个股详情</title>
+    <link rel="stylesheet" href="../css/api.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/frame.css">
+    <link rel="stylesheet" href="../css/frame_leon.css">
+    <link rel="stylesheet" href="../css/reset-lwj.css">
+    <link rel="stylesheet" href="../css/style-lwj.css">
+</head>
+<body>
+<header id="header" class="index moreHeader themeHeader">
+    <div class="statusBar"></div>
+    <div class="content">
+        <i class="return-btn" onclick="closeWindow('stockDetails')"></i>
+        参股金融
+        <span class="stockAttention"></span>
+    </div>
+</header>
+<section class="mainStockDetails">
+    <div class="dataShow clearfix">
+        <div class="leftNumber fl">
+            <span>14.26</span>
+            <span class="clearfix">
+                <b>+2.24</b>
+                <b>2.24%</b>
+            </span>
+            <span class="status">交易中...</span>
+        </div>
+        <div class="rightNumber fr">
+            <div class="topNum">
+                <span>
+                    今开<br>
+                    <b class="colorRed">3.14</b>
+                </span>
+                <span>
+                    昨收<br>
+                    <b class="colorRed">3.14</b>
+                </span>
+                <span>
+                    成交额(万元)<br>
+                    <b class="colorRed">3.14</b>
+                </span>
+            </div>
+            <div class="botNum">
+                <span>
+                    最高<br>
+                    <b class="colorRed">3.14</b>
+                </span>
+                <span>
+                    最低<br>
+                    <b class="colorRed">3.14</b>
+                </span>
+                <span>
+                    成交量(手)<br>
+                    <b class="colorRed">12</b>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="firstChart">
+        <div class="chartsContainer" id="firstChartsContainer">
+            第一个图表
+        </div>
+    </div>
+    <div class="secondChart">
+        <div class="titleShow">所属主题</div>
+        <div class="chartsContainer" id="secondChartsContainer">
+            第二个图表
+        </div>
+    </div>
+    <!--最新龙虎榜-->
+    <div class="newestBillboard">
+        <div class="title-column clearfix">
+            <div class="column-left fl">
+                <span>最新龙虎榜</span>
+            </div>
+            <div class="column-right fr">
+            <span class="show-date">
+                2017-10-8
+                <i id="icon-list" class="icon-list"></i>
+            </span>
+                <div class="popupsList" id="popups">
+                    <div class="trig"></div>
+                    <ul id="con-list">
+                        <li>2017-10-4</li>
+                        <li>2017-10-5</li>
+                        <li>2017-10-6</li>
+                        <li>2017-10-5</li>
+                        <li>2017-10-6</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="showDepartment">
+            <div class="btnColumn">
+                <span class="active">买入</span>
+                <span>卖出</span>
+            </div>
+            <div class="departmentBox showAll">
+                <div class="all buyIn active">
+                    <div class="showItem clearfix">
+                        <span class="fl">席位</span>
+                        <span class="fr">金额(万)</span>
+                    </div>
+                    <ul>
+                        <li class="clearfix" onclick="openWindow('businessDepartmentDetails',{},'push')">
+                            <span>上海江苏路证券营业部</span>
+                            <span>992.13</span>
+                        </li>
+                        <li class="clearfix" onclick="openWindow('businessDepartmentDetails',{},'push')">
+                            <span>上海福山路证券营业部</span>
+                            <span>992.13</span>
+                        </li>
+                        <li class="clearfix" onclick="openWindow('businessDepartmentDetails',{},'push')">
+                            <span>上海北京东路证券营业部</span>
+                            <span>992.13</span>
+                        </li>
+                        <li class="clearfix" onclick="openWindow('businessDepartmentDetails',{},'push')">
+                            <span>蚌埠中荣街证券营业部</span>
+                            <span>992.13</span>
+                        </li>
+                        <li class="clearfix" onclick="openWindow('businessDepartmentDetails',{},'push')">
+                            <span>北京中关村南大街证券营业部</span>
+                            <span>992.13</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="all saleOut">卖出</div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bind-mark"></div>
+</body>
+<script src="../script/flexible.js"></script>
+<script src="../script/zepto.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/echarts.min.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/common_lwj.js"></script>
+<script src="../script/index.js"></script>
+<script src="../script/stockDetails.js"></script>
+<script>
+    apiready = function () {
+
+    }
+    clickDate();
+    firstCharts();
+    secondCharts();
+    $('.btnColumn span').on('click',function(){
+        $('.btnColumn span').removeClass('active');
+        $('.showAll div.all').removeClass('active');
+        $(this).addClass('active');
+        $('.showAll div.all').eq($(this).index()).addClass('active');
+    })
+</script>
+</html>
